@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+header {
+    text-align: center;
+    padding-top: 20px;
+    //padding-bottom: 20px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+header li {
+    display: inline;
+    padding-left: 20px;
+}
+
+@media screen and (min-width: map-get($breakpoints,'medium')) {
+    header {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: $sidebar-size;
+        padding-top: 40px;
+        text-align: right;
+    }
+}

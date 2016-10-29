@@ -1,0 +1,15 @@
+---
+layout: default
+title: "Accueil"
+---
+<main>
+  <section class="year">
+
+  {% for post in site.categories.sixteen %}
+    <article>
+       <a href={{ post.img_path }} data-lightbox="sixteen">{{ post.content | remove: '<p>' | remove: '</p>' }}</a>
+    </article>
+  {% endfor %}
+
+  </section>
+</main>
