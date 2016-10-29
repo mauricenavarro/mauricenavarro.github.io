@@ -6,9 +6,8 @@ title: "Accueil"
   <section>
   {% for post in site.posts limit:1%}
     <article>
-       {{ post.content  | remove: '<p>' | remove: '</p>' }}
+       <img src="{{ post.img_path }}" alt="Dernier dessein en date." />
        <p class="title">Dernier dessin du {{ post.title }}</p>
-       <p class="caption">{{ post.caption }}</p>
     </article>
   {% endfor %}
 
